@@ -13,7 +13,7 @@ export default function SurveyYourWay() {
   const [title, setTitle] = useState('');
 
   //!! serves as placeholder for authentication logic. Set to 'false' to see an example survey instead of the survey-creator
-  const [isAdmin, setIsAdmin] = useState(false);
+  const [isAdmin, setIsAdmin] = useState(true);
 
   type SurveyToFillOut =
     | {
@@ -48,7 +48,7 @@ export default function SurveyYourWay() {
       return !element.deleted && element.question;
     });
     // create a new array of objects that contain an id (questionNumber), the question, and the response-type (which is set to 1 if it was 0)
-    const finishedSurveyData = {
+    const createdSurveyData = {
       title: title,
       questions: surveyElementsToInclude.map((element, index) => {
         return {
@@ -59,7 +59,7 @@ export default function SurveyYourWay() {
       }),
     };
     //!! include http-request for handling finishedSurveyData
-    console.log('finishedSurveyData: ', finishedSurveyData);
+    console.log('createdSurveyData: ', createdSurveyData);
   };
 
   const submitFilledOutSurvey = () => {

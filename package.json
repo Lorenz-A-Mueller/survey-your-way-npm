@@ -1,13 +1,15 @@
 {
   "name": "survey-your-way-npm",
   "version": "0.1.0",
-  "private": true,
   "dependencies": {
+    "@babel/eslint-parser": "^7.16.3",
     "@emotion/react": "^11.7.0",
     "@testing-library/jest-dom": "^5.11.4",
     "@testing-library/react": "^11.1.0",
     "@testing-library/user-event": "^12.1.10",
     "@types/react-dom": "^17.0.11",
+    "@typescript-eslint/parser": "^5.6.0",
+    "eslint": "^8.4.1",
     "eslint-config-react-app": "^6.0.0",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
@@ -25,8 +27,7 @@
     "extends": [
       "react-app",
       "react-app/jest"
-    ],
-    "parser": "react-scripts/node_modules/babel-eslint"
+    ]
   },
   "browserslist": {
     "production": [
@@ -42,6 +43,7 @@
   },
   "devDependencies": {
     "@types/react": "^17.0.37",
+    "babel-eslint": "^10.1.0",
     "eslint-config-react": "^1.1.7"
   }
 }
