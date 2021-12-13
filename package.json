@@ -1,6 +1,6 @@
 {
   "name": "survey-your-way-npm",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "dependencies": {
     "@babel/eslint-parser": "^7.16.3",
     "@emotion/react": "^11.7.0",
